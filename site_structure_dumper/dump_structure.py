@@ -1,53 +1,46 @@
 from __future__ import absolute_import, division, print_function, \
     with_statement
-import requests
-from peewee import *
-import json
-import numpy
 import logging
-from multiprocessing.dummy import Pool as ThreadPool
-import threading
+from site_structure_dumper.utils import dumper_utils
 
 
-class dumper():
-    @staticmethod
-    def format_id_to_string(f, t):
-        from_id = int()
-        to_id = int()
-        try:
-            from_id = str('%012d' % f)
-            to_id = str('%012d' % t)
-        except Exception as e:
-            logging.error(e)
-            logging.error("error occurred when formating from_id and to_id, make sure these are integers")
-            logging.error("from_id: %s" % str(from_id))
-            logging.error("to_id: %s" % str(to_id))
-        return from_id, to_id
+# ------- Start Unit Tests -------
 
-    @staticmethod
-    def init_request():
-        s = int()
-        try:
-            s = requests.Session()
-        except Exception as e:
-            logging.error(e)
-            logging.error("network may exploding, cannot initiate a request now. ")
-            s = 1
-        return s
 
-    @staticmethod
-    def request_cookie(request):
-        s = int(1)
-        try:
-            request.get("https://www.wozwaardeloket.nl/index.jsp?a=1&accept=true&")
-            s = request
-        except Exception as e:
-            logging.error(e)
-            logging.error("Please fix your network connection status immediately")
-            logging.error("the script will wait for you about 10 seconds :< ")
-            s = 1
-        return s
+def test_basic_dump():
+    try:
+        obj = dump_properties_structure_from_id_to_id(15300024745, 15300025745)
+        assert obj is not None
+        assert len(obj['features']) > 10
+    except ValueError as e:
+        logging.error(e)
+        logging.error("please update the code for parse obj id. ")
+    except Exception as e:
+        logging.error(e)
+        logging.error("please update the code for scrapping objs. ")
 
+
+# ------ End Unit Tests ------
+
+def dump_properties_structure_from_id_to_id(from_id=-1, to_id=-1):
+    f, t = from_id, to_id
+    if f == -1 or t == -1:
+        raise ValueError("Please pass from_id and to_id. ")
+
+    f, t = dumper_utils.format_id_to_string(f, t)
+    if f == -1 or t == -1:
+        raise ValueError("from_id and to_id cannot be parsed. ")
+
+    d = dumper(f, t)
+    d.run()
+    json_obj = d.response_obj()
+
+    return json_obj
+
+# ------ End Interfaces ------
+
+
+class dumper:
     def __init__(self, from_id=None, to_id=None):
         self.f = from_id
         self.t = to_id
@@ -83,11 +76,11 @@ class dumper():
         t = self.t
         if f is None:
             raise Exception("From id is None, check the script please. ")
-        elif f is not str:
+        if type(f) is not str:
             raise Exception("Please format id to string first. ")
         if t is None:
             raise Exception("To id is None, check the script please. ")
-        elif f is not str:
+        if type(f) is not str:
             raise Exception("Please format id to string first. ")
 
     def post_request(self, socket):
@@ -107,40 +100,29 @@ class dumper():
             response = 1
         return response
 
-    @staticmethod
-    def parse_request_to_dict(response):
-        text_response = response
-        if not hasattr(text_response, "text"):
-            logging.error("this response has no text attribute. ")
-            # raise ValueError("This is not a valid response. ")
-            return 2
-
-        json_obj = int()
-        try:
-            json_obj = json.loads(text_response.text)
-        except Exception as e:
-            logging.error("Error occured when parsing response to json object. ")
-            # raise ValueError("This is not a valid response")
-            json_obj = 2
-        return json_obj
-
     def run(self):
-        s = dumper.init_request()
+        try:
+            self.check_id()
+        except Exception as e:
+            logging.error(e)
+
+        s = dumper_utils.init_request()
         while s == 1:
             logging.error("Request cannot be initiated, now retrying. ")
-            s = dumper.init_request()
+            s = dumper_utils.init_request()
 
-        s_with_cookie = dumper.request_cookie(s)
+        s_with_cookie = dumper_utils.request_cookie(s)
         while s_with_cookie == 1:
             logging.error("Error occurred on requesting cookies, now retrying. ")
-            s_with_cookie = dumper.request_cookie(s)
+            s_with_cookie = dumper_utils.request_cookie(s)
 
         response = self.post_request(s_with_cookie)
         while response == 1:
             logging.error("error occurred during start request, now trying restart the request.")
             response = self.post_request(s_with_cookie)
+        del s_with_cookie
 
-        json_dict = dumper.parse_request_to_dict(response)
+        json_dict = dumper_utils.parse_request_to_dict(response)
         if json_dict == 2:
             logging.error("this response can not be parsed. ")
         self.json_dict = json_dict
@@ -151,36 +133,5 @@ class dumper():
             return None
         else:
             return self.json_dict
-
-
-def dump_properties_structure_from_id_to_id(from_id=-1, to_id=-1):
-    f, t = from_id, to_id
-    if f == -1 or t == -1:
-        raise ValueError("Please pass from_id and to_id. ")
-
-    f, t = dumper.format_id_to_string(f, t)
-    if f == -1 or t == -1:
-        raise ValueError("from_id and to_id cannot be parsed. ")
-
-    d = dumper(f, t)
-    d.run()
-    json_obj = d.response_obj()
-
-    return json_obj
-
-
-def test_basic_dump():
-    try:
-        obj = dump_properties_structure_from_id_to_id(1000, 10000)
-        if obj is None:
-            raise Exception("please update the code. ")
-    except ValueError as e:
-        logging.error(e)
-        logging.error("please update the code for parse obj id. ")
-    except Exception as e:
-        logging.error(e)
-        logging.error("please update the code for scrapping objs. ")
-
-
 
 

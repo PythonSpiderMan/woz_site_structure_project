@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c9043bf-9bdd-462e-a317-cfb92e42f957" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/woz_site_properties_structure.iml" afterPath="$PROJECT_DIR$/.idea/woz_site_properties_structure.iml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
       <change beforePath="$PROJECT_DIR$/site_structure_dumper/dump_structure.py" afterPath="$PROJECT_DIR$/site_structure_dumper/dump_structure.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,26 +12,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/woz_package$Unittests_for_utils_UnitTest_test_format_id_to_string.coverage" NAME="Unittests for utils.UnitTest.test_format_id_to_string Coverage Results" MODIFIED="1513455629450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/site_structure_dumper" />
+    <SUITE FILE_PATH="coverage/woz_package$Unittests_for_utils_UnitTest_test_init_request.coverage" NAME="Unittests for utils.UnitTest.test_init_request Coverage Results" MODIFIED="1513455646107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/site_structure_dumper" />
+    <SUITE FILE_PATH="coverage/woz_package$Unittests_for_utils_UnitTest_test_request_to_dict.coverage" NAME="Unittests for utils.UnitTest.test_request_to_dict Coverage Results" MODIFIED="1513455602324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/site_structure_dumper" />
+    <SUITE FILE_PATH="coverage/woz_package$Unittests_for_utils_UnitTest_test_request_cookie.coverage" NAME="Unittests for utils.UnitTest.test_request_cookie Coverage Results" MODIFIED="1513456027181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/site_structure_dumper" />
     <SUITE FILE_PATH="coverage/woz_site_properties_structure$woz_test.coverage" NAME="woz_test Coverage Results" MODIFIED="1513442327153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/woz_package$woz_test.coverage" NAME="woz_test Coverage Results" MODIFIED="1513451754700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/woz_package$woz_test.coverage" NAME="woz_test Coverage Results" MODIFIED="1513456096493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/woz_package$old_dump_structure.coverage" NAME="old_dump_structure Coverage Results" MODIFIED="1513456053867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/site_structure_dumper" />
     <SUITE FILE_PATH="coverage/woz_site_properties_structure$structure_dump.coverage" NAME="structure_dump Coverage Results" MODIFIED="1513441038061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="dump_structure.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/site_structure_dumper/dump_structure.py">
+      <file leaf-file-name="store_response.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/site_structure_dumper/store_response.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="917">
-              <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#86#0" expanded="true" />
-                <element signature="e#796#1032#0" expanded="false" />
-                <element signature="e#1541#3180#0" expanded="false" />
-                <element signature="e#1613#3093#0" expanded="false" />
-                <element signature="e#3214#3619#0" expanded="false" />
-                <element signature="e#4322#4864#0" expanded="false" />
-                <element signature="e#5729#5882#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,6 +42,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>del</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,6 +59,9 @@
         <option value="$PROJECT_DIR$/property_data/__init__.py" />
         <option value="$PROJECT_DIR$/start.py" />
         <option value="$PROJECT_DIR$/site_structure_dumper/dump_structure.py" />
+        <option value="$PROJECT_DIR$/site_structure_dumper/utils.py" />
+        <option value="$PROJECT_DIR$/site_structure_dumper/old_dump_structure.py" />
+        <option value="$PROJECT_DIR$/site_structure_dumper/store_response.py" />
       </list>
     </option>
   </component>
@@ -70,11 +71,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2048" />
+    <option name="width" value="2048" />
+    <option name="height" value="2232" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -116,7 +116,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/start.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -151,12 +151,91 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="old_dump_structure" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_structure_dumper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="woz_site_properties_structure" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/site_structure_dumper/old_dump_structure.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Unittests for utils.UnitTest.test_format_id_to_string" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_structure_dumper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="woz_site_properties_structure" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;utils.UnitTest.test_format_id_to_string&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for utils.UnitTest.test_init_request" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_structure_dumper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="woz_site_properties_structure" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;utils.UnitTest.test_init_request&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for utils.UnitTest.test_request_cookie" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_structure_dumper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="woz_site_properties_structure" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;utils.UnitTest.test_request_cookie&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for utils.UnitTest.test_request_to_dict" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/site_structure_dumper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="woz_site_properties_structure" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;utils.UnitTest.test_request_to_dict&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="woz_test" type="tests" factoryName="py.test">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
       <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\scrapy\python.exe" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -164,13 +243,27 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;site_structure_dumper.dump_structure.test_basic_dump&quot;" />
+      <option name="_new_target" value="&quot;site_structure_dumper.old_dump_structure.test_basic_dump&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <list size="2">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.normal_start" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.woz_test" />
+      <item index="2" class="java.lang.String" itemvalue="Python.old_dump_structure" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_request_to_dict" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_format_id_to_string" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_init_request" />
+      <item index="6" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_request_cookie" />
     </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.old_dump_structure" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_request_cookie" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_init_request" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_format_id_to_string" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for utils.UnitTest.test_request_to_dict" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -189,47 +282,49 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="woz_test - 2017.12.17 at 00h 32m 48s.xml">
+    <history-entry file="Unittests_for_utils_UnitTest_test_format_id_to_string - 2017.12.17 at 04h 20m 29s.xml">
+      <configuration name="Unittests for utils.UnitTest.test_format_id_to_string" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_utils_UnitTest_test_init_request - 2017.12.17 at 04h 20m 46s.xml">
+      <configuration name="Unittests for utils.UnitTest.test_init_request" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_utils_UnitTest_test_request_cookie - 2017.12.17 at 04h 20m 58s.xml">
+      <configuration name="Unittests for utils.UnitTest.test_request_cookie" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_utils_UnitTest_test_request_cookie - 2017.12.17 at 04h 22m 33s.xml">
+      <configuration name="Unittests for utils.UnitTest.test_request_cookie" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_utils_UnitTest_test_request_cookie - 2017.12.17 at 04h 23m 14s.xml">
+      <configuration name="Unittests for utils.UnitTest.test_request_cookie" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_utils_UnitTest_test_request_cookie - 2017.12.17 at 04h 27m 14s.xml">
+      <configuration name="Unittests for utils.UnitTest.test_request_cookie" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_utils_UnitTest_test_request_to_dict - 2017.12.17 at 04h 20m 03s.xml">
+      <configuration name="Unittests for utils.UnitTest.test_request_to_dict" configurationId="tests" />
+    </history-entry>
+    <history-entry file="woz_test - 2017.12.17 at 04h 19m 09s.xml">
       <configuration name="woz_test" configurationId="tests" />
     </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 00h 34m 44s.xml">
+    <history-entry file="woz_test - 2017.12.17 at 04h 28m 28s.xml">
       <configuration name="woz_test" configurationId="tests" />
     </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 00h 35m 40s.xml">
-      <configuration name="woz_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 00h 35m 59s.xml">
-      <configuration name="woz_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 00h 38m 45s.xml">
-      <configuration name="woz_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 03h 05m 20s.xml">
-      <configuration name="woz_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 03h 08m 07s.xml">
-      <configuration name="woz_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 03h 11m 32s.xml">
-      <configuration name="woz_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 03h 12m 48s.xml">
-      <configuration name="woz_test" configurationId="tests" />
-    </history-entry>
-    <history-entry file="woz_test - 2017.12.17 at 03h 15m 55s.xml">
+    <history-entry file="woz_test - 2017.12.17 at 04h 28m 54s.xml">
       <configuration name="woz_test" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="-13" width="4122" height="2258" extended-state="6" />
+    <frame x="2048" y="0" width="2048" height="2232" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25211757" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5216495" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -253,14 +348,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/site_structure_dumper/dump_structure.py</url>
-          <line>127</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -269,15 +357,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#86#0" expanded="true" />
-            <element signature="e#796#1032#0" expanded="false" />
-            <element signature="e#1541#3180#0" expanded="false" />
-            <element signature="e#1613#3093#0" expanded="false" />
-            <element signature="e#3214#3619#0" expanded="false" />
-            <element signature="e#4322#4864#0" expanded="false" />
-            <element signature="e#5729#5882#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -293,6 +373,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -328,17 +409,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site_structure_dumper/dump_structure.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
-          <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site_structure_dumper/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#86#0" expanded="true" />
-            <element signature="e#796#1032#0" expanded="false" />
-            <element signature="e#1541#3180#0" expanded="false" />
-            <element signature="e#1613#3093#0" expanded="false" />
-            <element signature="e#3214#3619#0" expanded="false" />
-            <element signature="e#4322#4864#0" expanded="false" />
-            <element signature="e#5729#5882#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site_structure_dumper/old_dump_structure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="34" column="11" lean-forward="true" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site_structure_dumper/store_response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
