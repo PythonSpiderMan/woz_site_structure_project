@@ -37,9 +37,10 @@ class dumper():
 
     @staticmethod
     def request_cookie(request):
-        s = int()
+        s = int(1)
         try:
             request.get("https://www.wozwaardeloket.nl/index.jsp?a=1&accept=true&")
+            s = request
         except Exception as e:
             logging.error(e)
             logging.error("Please fix your network connection status immediately")
@@ -160,10 +161,6 @@ def dump_properties_structure_from_id_to_id(from_id=-1, to_id=-1):
     f, t = dumper.format_id_to_string(f, t)
     if f == -1 or t == -1:
         raise ValueError("from_id and to_id cannot be parsed. ")
-    assert len(f) == 12
-    assert len(t) == 12
-    assert type(f) == str
-    assert type(t) == str
 
     d = dumper(f, t)
     d.run()
@@ -172,9 +169,11 @@ def dump_properties_structure_from_id_to_id(from_id=-1, to_id=-1):
     return json_obj
 
 
-def test_new():
+def test_basic_dump():
     try:
         obj = dump_properties_structure_from_id_to_id(1000, 10000)
+        if obj is None:
+            raise Exception("please update the code. ")
     except ValueError as e:
         logging.error(e)
         logging.error("please update the code for parse obj id. ")
