@@ -8,9 +8,10 @@ import logging
 from multiprocessing.dummy import Pool as ThreadPool
 import threading
 
+
 class BaseModel(Model):
     class Meta:
-        database = SqliteDatabase("netherland_properties.db")
+        database = SqliteDatabase("temp1.db")
         
 class PropertyModel(BaseModel):
     identificatie = CharField(unique=True)
