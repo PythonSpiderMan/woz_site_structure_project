@@ -69,7 +69,6 @@
     </column>
     <index id="21" parent="6" name="dbmodel_identificatie">
       <ColNames>identificatie</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="22" parent="6">

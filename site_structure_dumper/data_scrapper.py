@@ -13,11 +13,11 @@ def test_basic_dump():
         assert obj is not None
         assert len(obj['features']) > 10
     except ValueError as e:
-        logging.error(e)
-        logging.error("please update the code for parse obj id. ")
+        logging.info(e)
+        logging.info("please update the code for parse obj id. ")
     except Exception as e:
-        logging.error(e)
-        logging.error("please update the code for scrapping objs. ")
+        logging.info(e)
+        logging.info("please update the code for scrapping objs. ")
 
 
 # ------ End Unit Tests ------
@@ -34,6 +34,14 @@ def dump_properties_structure_from_id_to_id(from_id=-1, to_id=-1):
     d = dumper(f, t)
     d.run()
     json_obj = d.response_obj()
+    retry = 0
+    while json_obj is None:
+        d.run()
+        json_obj = d.response_obj()
+        retry += 1
+        if retry > 4:
+            json_obj = []
+            break
 
     return json_obj
 
@@ -93,10 +101,10 @@ class dumper:
             response = s.post(url="https://www.wozwaardeloket.nl/woz-proxy/wozloket", data=xml_obj)
             print("scraping woz obj from id %s to id %s . " % (str(from_id), str(to_id)), end="\n")
         except Exception as e:
-            logging.error(e)
-            logging.error("request failed. ")
-            logging.error("from_id=%s" % str(from_id))
-            logging.error("to_id=%s" % str(to_id))
+            logging.info(e)
+            logging.info("request failed. ")
+            logging.info("from_id=%s" % str(from_id))
+            logging.info("to_id=%s" % str(to_id))
             response = 1
         return response
 
@@ -104,33 +112,48 @@ class dumper:
         try:
             self.check_id()
         except Exception as e:
-            logging.error(e)
+            logging.info(e)
 
         s = dumper_utils.init_request()
+        retry = 0
         while s == 1:
-            logging.error("Request cannot be initiated, now retrying. ")
+            logging.info("Request cannot be initiated, now retrying. ")
             s = dumper_utils.init_request()
+            retry += 1
+            if retry > 4:
+                break
 
         s_with_cookie = dumper_utils.request_cookie(s)
+        retry = 0
         while s_with_cookie == 1:
-            logging.error("Error occurred on requesting cookies, now retrying. ")
+            logging.info("Error occurred on requesting cookies, now retrying. ")
             s_with_cookie = dumper_utils.request_cookie(s)
+            retry += 1
+            if retry > 4:
+                break
 
         response = self.post_request(s_with_cookie)
+        retry = 0
         while response == 1:
-            logging.error("error occurred during start request, now trying restart the request.")
+            logging.info("error occurred during start request, now trying restart the request.")
             response = self.post_request(s_with_cookie)
+            retry += 1
+            if retry > 4:
+                break
         del s_with_cookie
 
         json_dict = dumper_utils.parse_request_to_dict(response)
         if json_dict == 2:
-            logging.error("this response can not be parsed. ")
+            logging.info("this response can not be parsed. ")
         self.json_dict = json_dict
 
     def response_obj(self):
         if self.json_dict == 2:
-            logging.error("this response is not valid. ")
+            logging.info("this response is not valid. ")
             return None
+        elif not 'features' in self.json_dict:
+            logging.info("this json is not in valid format")
+            return []
         else:
             return self.json_dict
 
