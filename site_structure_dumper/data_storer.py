@@ -5,6 +5,7 @@ from property_data.property_model import CachePropertyModel
 from property_data.memory_cache_database import init_cache_database
 from site_structure_dumper.data_parser import propertyParser
 import logging
+import boto3
 
 
 class dataStorer:
@@ -81,3 +82,16 @@ class dataStorer:
             item.gebruiksdoel = entry.gebruiksdoel
             item.oppervlakte = entry.oppervlakte
             item.save()
+
+    
+
+session = boto3.session.Session()
+client = session.client('s3',
+                        region_name='nyc3',
+                        endpoint_url='https://nyc3.digitaloceanspaces.com',
+                        aws_access_key_id='A6LS4MC6FKL4G536NPBU',
+                        aws_secret_access_key='2v8y2hx8X71GHgcuWz1nVMRHtAX47ZlBKGQPpWRosmg')
+
+client.upload_file('__libsodium__.ipynb',  # Path to local file
+                   'xetra-database',  # Name of Space
+                   'woz_databases/__libsodium__.ipynb')  # Name for remote file
