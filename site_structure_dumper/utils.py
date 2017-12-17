@@ -65,6 +65,9 @@ class dumper_utils:
         s = int()
         try:
             s = requests.Session()
+            proxies = dict(http='socks5://127.0.0.1:1080',
+                                 https='socks5://127.0.0.1:1080')
+            s.proxies.update(proxies)
         except Exception as e:
             logging.error(e)
             logging.error("network may exploding, cannot initiate a request now. ")

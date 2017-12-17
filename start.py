@@ -7,7 +7,7 @@ def scrape_range_to_cache(index):
     step = 5000
     obj = data_scrapper.dump_properties_structure_from_id_to_id(index*step+1, ((index+1)*step)+2)
     storer.cache_json_response_to_memory(obj)
-    print("scrape range from %s to %s" % (str(index*step+1), str((index+1)*step)+2))
+    print("scrape range from %s to %s" % (str(index*step+1), str(((index+1)*step)+2)))
 
 
 if __name__ == '__main__':
@@ -21,7 +21,7 @@ if __name__ == '__main__':
 
     chunks = [total_steps[x:x + 1000] for x in range(0, len(total_steps), 1000)]
     for each_chunk in chunks:
-        pool = ThreadPool(1000)
+        pool = ThreadPool(400)
         pool.map(scrape_range_to_cache, each_chunk)
         pool.close()
         pool.join()
